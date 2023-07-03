@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto+Slab:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <script src="./bundle.js" defer></script>
@@ -16,14 +22,25 @@
     </header>
     <nav class="nav" id="nav">
       <div class="default-list">
-        <button class="buttons-default" id="button-inbox">Inbox</button>
-        <button class="buttons-default" id="button-today">Today</button>
-        <button class="buttons-default" id="button-this-week">This Week</button>
+        <button class="buttons-default" id="button-inbox">
+          <img src="./icons/inbox.png" alt="calendar" class="nav-icons" />
+          Inbox
+        </button>
+        <button class="buttons-default" id="button-today">
+          <img src="./icons/calendar.png" alt="" class="nav-icons" />Today
+        </button>
+        <button class="buttons-default" id="button-this-week">
+          <img src="./icons/calendar-week.png" alt="" class="nav-icons" />This
+          Week
+        </button>
       </div>
       <h1>Projects</h1>
       <div class="projects-nav" id="projects-default">
         <div class="project-list" id="project-list"></div>
-        <button class="add-project" id="add-project">Add Project</button>
+        <button class="add-project" id="add-project">
+          <img src="./icons/plus.png" alt="" class="nav-icons" />
+          Add Project
+        </button>
         <div class="project-add-popup">
           <input
             class="text-add-project-popup"
@@ -42,7 +59,9 @@
       </div>
     </nav>
     <!--To do's-->
-    <div class="project-preview" id="project-preview">asdasdas</div>
+    <div class="project-preview" id="project-preview">
+      <button class="task-button">+ Add Task</button>
+    </div>
     <footer class="footer">
       <p>Copyright © 2023 Santiago Torricella</p>
       <a href="https://github.com/SantiagoTorricella" target="_blank" rel="">
