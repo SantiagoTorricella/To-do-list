@@ -2,11 +2,93 @@
   margin: 0px;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  height: 100vh;
+}
+
 .header {
-  color: red;
+  padding: 1em;
+  grid-column: 1/3;
+  background-color: rgb(65, 64, 64);
 }
 
 .logo {
-  height: 2em;
-  width: 2em;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.img-logo {
+  height: 5em;
+  width: 5em;
+}
+
+.logo h1 {
+  font-size: 50px;
+  margin-left: 2em;
+}
+
+.nav {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: rgb(224, 224, 224);
+}
+
+.default-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border: none;
+  border-radius: 0.3em;
+  margin: 0.5em 0em;
+  background-color: rgb(224, 224, 224);
+  width: 15em;
+  height: 2.5em;
+  text-align: start;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(180, 180, 180);
+}
+
+h1 {
+  padding: 10px 60px;
+}
+
+.project-preview {
+  background-color: rgb(255, 255, 255);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.project-add-popup {
+  visibility: hidden;
+}
+
+.projects-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background-color: rgb(65, 64, 64);
+  color: white;
+}
+
+.footer > p {
+  position: relative;
+  top: 40%;
 }
