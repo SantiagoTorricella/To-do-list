@@ -14,58 +14,56 @@
   </head>
   <body>
     <script src="./bundle.js" defer></script>
+
     <header class="header">
-      <div class="logo">
-        <img src="./icons/check.svg" alt="logo-svg" class="img-logo" />
-        <h1>To Do List</h1>
+      <div class="header__logo">
+        <img src="./icons/check.svg" alt="logo-svg" class="header__img-logo" />
+        <h1 class="header__logo-title">To Do List</h1>
       </div>
     </header>
+
     <nav class="nav" id="nav">
-      <div class="default-list">
-        <button class="buttons-default" id="button-inbox">
-          <img src="./icons/inbox.png" alt="calendar" class="nav-icons" />
+      <div class="nav__default-list">
+        <button class="nav__buttons-default" id="nav__buttons-default">
+          <img src="./icons/inbox.png" alt="calendar" class="nav__icons" />
           Inbox
         </button>
-        <button class="buttons-default" id="button-today">
-          <img src="./icons/calendar.png" alt="" class="nav-icons" />Today
+        <button class="nav__buttons-default" id="button-today">
+          <img src="./icons/calendar.png" alt="" class="nav__icons" />
+          Today
         </button>
-        <button class="buttons-default" id="button-this-week">
-          <img src="./icons/calendar-week.png" alt="" class="nav-icons" />This
-          Week
+        <button class="nav__buttons-default" id="button-this-week">
+          <img src="./icons/calendar-week.png" alt="" class="nav__icons" />
+          This Week
         </button>
       </div>
-      <h1>Projects</h1>
-      <div class="projects-nav" id="projects-default">
-        <div class="project-list" id="project-list"></div>
-        <button class="add-project" id="add-project">
-          <img src="./icons/plus.png" alt="" class="nav-icons" />
+
+      <div class="nav__projects" id="nav__projects">
+        <h1>Projects</h1>
+        <div class="nav__project-list" id="nav__project-list"></div>
+        <button class="nav__add-project" id="nav__add-project">
+          <img src="./icons/plus.png" alt="" class="nav__icons" />
           Add Project
         </button>
-        <div class="project-add-popup">
-          <input
-            class="text-add-project-popup"
-            id="text-add-project-popup"
-            type="text"
-          />
-          <div class="new-project-buttons" id="add-project-buttons">
-            <button class="add-project-button" id="add-project-button">
-              Add
-            </button>
-            <button class="cancel-project-button" id="cancel-project-button">
-              Cancel
-            </button>
+        <div class="nav__project-add-popup">
+          <input class="nav__text-add-project-popup" id="text-add-project-popup" type="text" />
+          <div class="nav__new-project-buttons" id="add-project-buttons">
+            <button class="nav__add-project-button" id="add-project-button">Add</button>
+            <button class="nav__cancel-project-button" id="cancel-project-button">Cancel</button>
           </div>
         </div>
       </div>
+
+      <div class="nav__add-button">+</div>
     </nav>
+
     <!--To do's-->
-    <div class="project-preview" id="project-preview">
-      <button class="task-button">+ Add Task</button>
-    </div>
+    <div class="project-preview" id="project-preview"></div>
+
     <footer class="footer">
-      <p>Copyright © 2023 Santiago Torricella</p>
+      <p class="footer__p">Copyright © 2023 Santiago Torricella</p>
       <a href="https://github.com/SantiagoTorricella" target="_blank" rel="">
-        <div class="github-logo"></div>
+        <div class="footer_github-logo"></div>
       </a>
     </footer>
   </body>
