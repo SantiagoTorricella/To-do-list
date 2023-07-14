@@ -110,10 +110,13 @@ button:hover {
 }
 
 .nav__projects {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
+}
+
+.nav__projects-title {
+  align-self: flex-start;
 }
 
 .nav__project-add-popup {
@@ -122,9 +125,6 @@ button:hover {
 
 .nav__add-button {
   align-self: center;
-  height: 5em;
-  justify-self: center;
-  width: 5em;
 }
 
 /* ||TASKS*/
