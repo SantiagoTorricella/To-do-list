@@ -3,3 +3,5 @@ const createProject = (projectName) => {
   this.projectTasks = [];
   return { name, projectTasks };
 };
+
+export default createProject;

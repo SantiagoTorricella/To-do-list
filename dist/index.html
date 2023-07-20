@@ -43,10 +43,7 @@
       <div class="nav__projects" id="nav__projects">
         <h1 class="nav__projects-title">Projects</h1>
         <div class="nav__project-list" id="nav__project-list"></div>
-        <button class="nav__add-project" id="nav__add-project">
-          <img src="./icons/plus.png" alt="" class="nav__icons" />
-          Add Project
-        </button>
+
         <!--PROJECT_POP_UP-->
         <div class="nav__project-add-popup">
           <input class="nav__text-add-project-popup" id="text-add-project-popup" type="text" />
@@ -56,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="nav__add-button">+</div>
+      <button class="nav__add-button">+</button>
     </nav>
 
     <!--To do's-->
@@ -68,5 +65,28 @@
         <div class="footer_github-logo"></div>
       </a>
     </footer>
+
+    <!--Modal-->
+    <dialog data-modal class="modal">
+      <div class="modal__top-container">
+        <h1>Create a task</h1>
+        <button class="modal__button">X</button>
+      </div>
+      <div class="modal__body-container">
+        <div class="modal__options">
+          <div>To Do</div>
+          <div>Project</div>
+        </div>
+        <div class="modal__data-entry">
+          <label for="to-do-name">Name:</label>
+          <input type="text" placeholder="Exercise" name="to-do-name" class="modal__to-do-name" id="to-do-name" required></input>
+          <label for="to-do-description">Description:</label>
+          <input type="text" placeholder="Go to gym" name="to-do-description" class="modal__to-do-description" id="to-do-description" required></input>
+          <label for="to-do-date">Due Date:</label>
+          <input type="date" class="modal__to-do-date" name="to-do-date" id="to-do-date" required></input>
+        </div>
+      </div>
+      <button class="modal__add-button">Add</button>
+    </dialog>
   </body>
 </html>
