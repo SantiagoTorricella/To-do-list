@@ -1,7 +1,7 @@
 const createToDo = (name, description, date) => {
-  // this.name = name;
-  // this.description = description;
-  // this.date = date;
+  globalThis.name = name;
+  globalThis.description = description;
+  globalThis.date = date;
   return { name, description, date };
 };
 

@@ -1,7 +1,7 @@
 const createProject = (projectName) => {
-  this.name = projectName;
-  this.projectTasks = [];
-  return { name, projectTasks };
+  globalThis.name = projectName;
+  globalThis.projectTasks = [];
+  return { projectName, projectTasks };
 };
 
 export default createProject;

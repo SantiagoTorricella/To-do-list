@@ -41,15 +41,26 @@
       </div>
       <!--NAV_PROJECTS-->
       <div class="nav__projects" id="nav__projects">
-        <h1 class="nav__projects-title">Projects</h1>
+        <h1 class="nav__projects-title">Projects +</h1>
         <div class="nav__project-list" id="nav__project-list"></div>
 
         <!--PROJECT_POP_UP-->
         <div class="nav__project-add-popup">
-          <input class="nav__text-add-project-popup" id="text-add-project-popup" type="text" />
+          <input
+            class="nav__text-add-project-popup"
+            id="text-add-project-popup"
+            type="text"
+          />
           <div class="nav__new-project-buttons" id="add-project-buttons">
-            <button class="nav__add-project-button" id="add-project-button">Add</button>
-            <button class="nav__cancel-project-button" id="cancel-project-button">Cancel</button>
+            <button class="nav__add-project-button" id="add-project-button">
+              Add
+            </button>
+            <button
+              class="nav__cancel-project-button"
+              id="cancel-project-button"
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -75,18 +86,43 @@
       <div class="modal__body-container">
         <div class="modal__options">
           <div>To Do</div>
-          <div>Project</div>
         </div>
         <div class="modal__data-entry">
           <label for="to-do-name">Name:</label>
-          <input type="text" placeholder="Exercise" name="to-do-name" class="modal__to-do-name" id="to-do-name" required></input>
+          <input
+            type="text"
+            placeholder="Exercise"
+            name="to-do-name"
+            class="modal__to-do-name"
+            id="to-do-name"
+            required
+          />
           <label for="to-do-description">Description:</label>
-          <input type="text" placeholder="Go to gym" name="to-do-description" class="modal__to-do-description" id="to-do-description" required></input>
+          <input
+            type="text"
+            placeholder="Go to gym"
+            name="to-do-description"
+            class="modal__to-do-description"
+            id="to-do-description"
+            required
+          />
           <label for="to-do-date">Due Date:</label>
-          <input type="date" class="modal__to-do-date" name="to-do-date" id="to-do-date" required></input>
+          <input
+            type="date"
+            class="modal__to-do-date"
+            name="to-do-date"
+            id="to-do-date"
+            required
+          />
         </div>
       </div>
       <button class="modal__add-button">Add</button>
+    </dialog>
+
+    <dialog class="project-modal">
+      <h1>Create a Project</h1>
+      <input type="text" name="project-name" id="project-name" />
+      <button class="project__add-button">Add</button>
     </dialog>
   </body>
 </html>
