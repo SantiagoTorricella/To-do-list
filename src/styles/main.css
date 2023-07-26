@@ -31,11 +31,6 @@ button {
   width: 12em;
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: rgb(180, 180, 180);
-}
-
 /* || BLOCKS */
 
 .header {
@@ -141,7 +136,13 @@ button:hover {
   align-items: center;
 }
 
+.nav__project-list > button {
+  display: block;
+  text-align: center;
+}
+
 .nav__projects-title {
+  cursor: pointer;
   align-self: flex-start;
 }
 
@@ -167,6 +168,8 @@ button:hover {
   align-self: center;
   text-align: center;
 }
+
+/* MAIN BODY TASKS*/
 
 /* TO DO CARD */
 .to-do-title {
@@ -245,3 +248,12 @@ button:hover {
 }
 
 /* ||MODIFIERS */
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(180, 180, 180);
+}
+
+button:active {
+  background-color: rgb(180, 180, 180);
+}

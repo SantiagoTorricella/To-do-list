@@ -42,14 +42,19 @@
       <!--NAV_PROJECTS-->
       <div class="nav__projects" id="nav__projects">
         <h1 class="nav__projects-title">Projects +</h1>
-        <div class="nav__project-list" id="nav__project-list"></div>
+        <div class="nav__project-list" id="nav__project-list">
+          <button class="nav__project-title">Compras</button>
+          <button class="nav__project-title">Facultad</button>
+        </div>
 
         <!--PROJECT_POP_UP-->
+
         <div class="nav__project-add-popup">
           <input
+            type="text"
             class="nav__text-add-project-popup"
             id="text-add-project-popup"
-            type="text"
+            required
           />
           <div class="nav__new-project-buttons" id="add-project-buttons">
             <button class="nav__add-project-button" id="add-project-button">
@@ -87,31 +92,32 @@
         <div class="modal__options">
           <div>To Do</div>
         </div>
+
         <div class="modal__data-entry">
           <label for="to-do-name">Name:</label>
           <input
             type="text"
-            placeholder="Exercise"
             name="to-do-name"
-            class="modal__to-do-name"
             id="to-do-name"
+            class="modal__to-do-name"
+            placeholder="Exercise"
             required
           />
           <label for="to-do-description">Description:</label>
           <input
             type="text"
-            placeholder="Go to gym"
             name="to-do-description"
-            class="modal__to-do-description"
             id="to-do-description"
+            class="modal__to-do-description"
+            placeholder="Go to gym"
             required
           />
           <label for="to-do-date">Due Date:</label>
           <input
             type="date"
-            class="modal__to-do-date"
             name="to-do-date"
             id="to-do-date"
+            class="modal__to-do-date"
             required
           />
         </div>

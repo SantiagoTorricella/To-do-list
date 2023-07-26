@@ -1,8 +1,10 @@
-const createToDo = (name, description, date) => {
+const createToDo = (name, description, date, project) => {
   globalThis.name = name;
   globalThis.description = description;
   globalThis.date = date;
-  return { name, description, date };
+  globalThis.taskProject = project;
+
+  return { name, description, date, taskProject };
 };
 
 export { createToDo };
